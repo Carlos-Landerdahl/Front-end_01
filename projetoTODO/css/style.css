@@ -25,3 +25,36 @@ header p {
     font-weight: 300;
 }
 
+main {
+    text-align: center;
+    font-family: Roboto, sans-serif;
+    padding-top: 50px;
+}
+
+h2 {
+    font-weight: 400;
+}
+
+p {
+    background-color: rgb(198, 218, 215);
+}
+
+section {
+    margin-top: 50px
+}
+
+footer {
+    background-color: rgb(198, 218, 215);
+    width: 100vw;
+    height: 50px;
+    -webkit-box-shadow: 0px -2px 17px -1px rgba(0,0,0,0.81); 
+    box-shadow: 0px -2px 17px -1px rgba(0,0,0,0.81);
+    text-align: center;
+    margin-top:50px
+}
+
+h5 {
+    justify-content: center;
+    padding-top: 15px;
+}
+
