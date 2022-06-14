@@ -42,7 +42,18 @@ nav ul li a{
     margin:15px;
     font-size:25px;  
     color:var(--secondary-color);
-    text-decoration: none;    
+    text-decoration: none;
+       
+}
+
+@keyframes animate {
+    0% {
+        width: 0;
+    }
+    50% {
+        width: 100px;
+    }
+    
 }
 
 nav ul li a::before{
@@ -50,13 +61,12 @@ nav ul li a::before{
     background: var(--decoration-color);
     position:absolute;
     bottom:-10px;
-    height:5px;
-
-    /*dica: width iniciando em 0 e aplicação de uma transição*/
+    height:5px;    
   }
   
   nav ul li a:hover::before{
-   /*dica: width 100*/
+   /* width: 100px; */
+   animation: animate 1s ease-in-out;
   }
   
 
@@ -77,7 +87,7 @@ nav ul li a::before{
     background: var(--primary-color);
     padding: 10px 15px;
     text-decoration: none;
-    /* transition: ; */
+    transition: all 0.5s;
 }
 
 .social ul li .icon-facebook {background:#3b5998;} 
@@ -87,7 +97,7 @@ nav ul li a::before{
 .social ul li .icon-mail {background: #666666;}
 
 .social ul li a:hover{
-    /* transform: ; */
+    transform: scale(1.2);
 }
 
 
@@ -129,9 +139,10 @@ nav ul li a::before{
     border-right: 10px solid rgb(66,139,202);
     border-bottom: 10px solid rgb(202, 66, 129);
     border-left: 10px solid rgba(66,139,202,.2);
-     /* animation: ; */
+     animation: rodar 1.2s linear infinite;
  }
  
-/* keyframes    
-    crie a animação com a rotação do tempo 0 ao tempo 100
- */
+@keyframes rodar {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
